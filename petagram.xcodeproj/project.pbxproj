@@ -15,6 +15,10 @@
 		DA6C39FF248294BE0077A624 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6C39FE248294BE0077A624 /* SignInViewController.swift */; };
 		DA6C3A0124829D570077A624 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6C3A0024829D570077A624 /* SignUpViewController.swift */; };
 		DA6C3A062482A5070077A624 /* UIControllerExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6C3A052482A5070077A624 /* UIControllerExtentions.swift */; };
+		DA6C3A082483C61A0077A624 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6C3A072483C61A0077A624 /* GalleryViewController.swift */; };
+		DA6C3A0A2483C6310077A624 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6C3A092483C6310077A624 /* SearchViewController.swift */; };
+		DA6C3A0C2483C6490077A624 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6C3A0B2483C6490077A624 /* UploadViewController.swift */; };
+		DA6C3A0E2483C65B0077A624 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6C3A0D2483C65B0077A624 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		DA6C39FE248294BE0077A624 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		DA6C3A0024829D570077A624 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		DA6C3A052482A5070077A624 /* UIControllerExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIControllerExtentions.swift; sourceTree = "<group>"; };
+		DA6C3A072483C61A0077A624 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		DA6C3A092483C6310077A624 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		DA6C3A0B2483C6490077A624 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		DA6C3A0D2483C65B0077A624 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +93,10 @@
 			children = (
 				DA6C3A0024829D570077A624 /* SignUpViewController.swift */,
 				DA6C39FE248294BE0077A624 /* SignInViewController.swift */,
+				DA6C3A072483C61A0077A624 /* GalleryViewController.swift */,
+				DA6C3A092483C6310077A624 /* SearchViewController.swift */,
+				DA6C3A0B2483C6490077A624 /* UploadViewController.swift */,
+				DA6C3A0D2483C65B0077A624 /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -169,8 +181,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA6C3A062482A5070077A624 /* UIControllerExtentions.swift in Sources */,
+				DA6C3A0C2483C6490077A624 /* UploadViewController.swift in Sources */,
+				DA6C3A0A2483C6310077A624 /* SearchViewController.swift in Sources */,
 				DA6C39EB24828F4B0077A624 /* AppDelegate.swift in Sources */,
 				DA6C39ED24828F4B0077A624 /* SceneDelegate.swift in Sources */,
+				DA6C3A082483C61A0077A624 /* GalleryViewController.swift in Sources */,
+				DA6C3A0E2483C65B0077A624 /* ProfileViewController.swift in Sources */,
 				DA6C3A0124829D570077A624 /* SignUpViewController.swift in Sources */,
 				DA6C39FF248294BE0077A624 /* SignInViewController.swift in Sources */,
 			);
