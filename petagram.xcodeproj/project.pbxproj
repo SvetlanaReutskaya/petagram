@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		644E0809CA7F1118DFAAEA3B /* Pods_petagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091B8DE92963624B9C8EB5CF /* Pods_petagram.framework */; };
 		DA6C39EB24828F4B0077A624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6C39EA24828F4B0077A624 /* AppDelegate.swift */; };
 		DA6C39ED24828F4B0077A624 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6C39EC24828F4B0077A624 /* SceneDelegate.swift */; };
 		DA6C39F224828F4B0077A624 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA6C39F024828F4B0077A624 /* Main.storyboard */; };
@@ -19,9 +20,14 @@
 		DA6C3A0A2483C6310077A624 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6C3A092483C6310077A624 /* SearchViewController.swift */; };
 		DA6C3A0C2483C6490077A624 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6C3A0B2483C6490077A624 /* UploadViewController.swift */; };
 		DA6C3A0E2483C65B0077A624 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6C3A0D2483C65B0077A624 /* ProfileViewController.swift */; };
+		DA6C3A11248506910077A624 /* Board.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA6C3A0F248506910077A624 /* Board.storyboard */; };
+		DA6C3A13248510AC0077A624 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA6C3A12248510AC0077A624 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		091B8DE92963624B9C8EB5CF /* Pods_petagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_petagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55A97531A61693461E7337C3 /* Pods-petagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-petagram.debug.xcconfig"; path = "Target Support Files/Pods-petagram/Pods-petagram.debug.xcconfig"; sourceTree = "<group>"; };
+		9C3B1346C91C5C81AFEE094C /* Pods-petagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-petagram.release.xcconfig"; path = "Target Support Files/Pods-petagram/Pods-petagram.release.xcconfig"; sourceTree = "<group>"; };
 		DA6C39E724828F4B0077A624 /* petagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = petagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6C39EA24828F4B0077A624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA6C39EC24828F4B0077A624 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +42,8 @@
 		DA6C3A092483C6310077A624 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		DA6C3A0B2483C6490077A624 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		DA6C3A0D2483C65B0077A624 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DA6C3A10248506910077A624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = petagram/Storyboards/Base.lproj/Board.storyboard; sourceTree = "<group>"; };
+		DA6C3A12248510AC0077A624 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +51,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				644E0809CA7F1118DFAAEA3B /* Pods_petagram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D193EE628A1D1C74B46F3CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55A97531A61693461E7337C3 /* Pods-petagram.debug.xcconfig */,
+				9C3B1346C91C5C81AFEE094C /* Pods-petagram.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		84CEE622F9AAF5D5275D1006 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				091B8DE92963624B9C8EB5CF /* Pods_petagram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DA6C39DE24828F4A0077A624 = {
 			isa = PBXGroup;
 			children = (
 				DA6C39E924828F4B0077A624 /* petagram */,
 				DA6C39E824828F4B0077A624 /* Products */,
+				0D193EE628A1D1C74B46F3CD /* Pods */,
+				84CEE622F9AAF5D5275D1006 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +97,7 @@
 		DA6C39E924828F4B0077A624 /* petagram */ = {
 			isa = PBXGroup;
 			children = (
+				DA6C3A12248510AC0077A624 /* GoogleService-Info.plist */,
 				DA6C3A042482A4CF0077A624 /* Extentions */,
 				DA6C3A0324829D780077A624 /* ViewControllers */,
 				DA6C3A0224829D640077A624 /* Storyboards */,
@@ -82,6 +112,7 @@
 		DA6C3A0224829D640077A624 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				DA6C3A0F248506910077A624 /* Board.storyboard */,
 				DA6C39F524828F4D0077A624 /* LaunchScreen.storyboard */,
 				DA6C39F024828F4B0077A624 /* Main.storyboard */,
 			);
@@ -116,9 +147,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA6C39FB24828F4D0077A624 /* Build configuration list for PBXNativeTarget "petagram" */;
 			buildPhases = (
+				FFDDF28183EA565784601818 /* [CP] Check Pods Manifest.lock */,
 				DA6C39E324828F4B0077A624 /* Sources */,
 				DA6C39E424828F4B0077A624 /* Frameworks */,
 				DA6C39E524828F4B0077A624 /* Resources */,
+				F0389F7E64C59AFBA989D2C4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,11 +202,55 @@
 			files = (
 				DA6C39F724828F4D0077A624 /* LaunchScreen.storyboard in Resources */,
 				DA6C39F424828F4D0077A624 /* Assets.xcassets in Resources */,
+				DA6C3A13248510AC0077A624 /* GoogleService-Info.plist in Resources */,
 				DA6C39F224828F4B0077A624 /* Main.storyboard in Resources */,
+				DA6C3A11248506910077A624 /* Board.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F0389F7E64C59AFBA989D2C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-petagram/Pods-petagram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-petagram/Pods-petagram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-petagram/Pods-petagram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFDDF28183EA565784601818 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-petagram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DA6C39E324828F4B0077A624 /* Sources */ = {
@@ -209,6 +286,14 @@
 				DA6C39F624828F4D0077A624 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DA6C3A0F248506910077A624 /* Board.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA6C3A10248506910077A624 /* Base */,
+			);
+			name = Board.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -330,6 +415,7 @@
 		};
 		DA6C39FC24828F4D0077A624 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55A97531A61693461E7337C3 /* Pods-petagram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -347,6 +433,7 @@
 		};
 		DA6C39FD24828F4D0077A624 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C3B1346C91C5C81AFEE094C /* Pods-petagram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

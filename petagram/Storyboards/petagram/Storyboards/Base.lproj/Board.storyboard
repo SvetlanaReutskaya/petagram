@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YAs-gD-Vqx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Upload View Controller-->
+        <scene sceneID="Tm3-Jg-nP7">
+            <objects>
+                <viewController id="Plx-Th-8hb" customClass="UploadViewController" customModule="petagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ng4-Xp-vqe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.70066732168197632" green="0.93289875984191895" blue="0.89274781942367554" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="vmq-aW-DCM"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="camerIcon" id="p2s-c5-gmi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U8e-5N-UF0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1104" y="2439"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="7pY-uO-fae">
+            <objects>
+                <viewController id="2xM-p5-RH2" customClass="ProfileViewController" customModule="petagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ori-UG-6lA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.70066732168197632" green="0.93289875984191895" blue="0.89274781942367554" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="JGc-ay-xIc"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="petIcon" id="iUo-NU-K2l"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="djt-KW-0eL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1606" y="1615"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="NoT-Aw-iNs">
+            <objects>
+                <viewController id="0gG-C1-Hbd" customClass="SearchViewController" customModule="petagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v0J-tb-G0i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.70066732168197632" green="0.93289875984191895" blue="0.89274781942367554" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="sFS-AO-Jma"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="searchIcon" id="laR-dQ-y8b"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EbR-AY-Xtc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="519" y="2439"/>
+        </scene>
+        <!--Gallery View Controller-->
+        <scene sceneID="2at-aD-K9o">
+            <objects>
+                <viewController id="1Ly-Be-u7Y" customClass="GalleryViewController" customModule="petagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TZH-5n-jDk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.70066732168197632" green="0.93289875984191895" blue="0.89274781942367554" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="WwK-hF-hNT"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="galleryIcon" id="tMS-vA-nMK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vn5-rY-2Ug" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2241" y="1615"/>
+        </scene>
+        <!--P E T A G R A M-->
+        <scene sceneID="UEp-dp-yQO">
+            <objects>
+                <tabBarController id="YAs-gD-Vqx" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="P E T A G R A M" id="dkp-Nk-B1E"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SQy-GP-smt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="1Ly-Be-u7Y" kind="relationship" relationship="viewControllers" id="38d-g5-Dv6"/>
+                        <segue destination="Plx-Th-8hb" kind="relationship" relationship="viewControllers" id="ail-Si-3K9"/>
+                        <segue destination="0gG-C1-Hbd" kind="relationship" relationship="viewControllers" id="Plk-ox-BLu"/>
+                        <segue destination="2xM-p5-RH2" kind="relationship" relationship="viewControllers" id="xGi-Tl-NCL"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xpv-Qw-3CR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-328" y="1410"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camerIcon" width="33" height="33"/>
+        <image name="galleryIcon" width="33" height="33"/>
+        <image name="petIcon" width="33" height="33"/>
+        <image name="searchIcon" width="33" height="33"/>
+    </resources>
+</document>
