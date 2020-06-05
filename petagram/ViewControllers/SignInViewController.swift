@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseDatabase
 
 class SignInViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var errorTextField: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,4 +33,14 @@ class SignInViewController: UIViewController {
     }
 
 
+    @IBAction func signInBtn_Touch(_ sender: Any) {
+        Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: { (user, error) in
+                if error != nil {
+                    self.errorTextField.text = error?.localizedDescription
+                return
+            }
+            self.errorTextField.text = ""
+            self.performSegue(withIdentifier: "SignIntoBoard", sender: nil)
+        })
+    }
 }

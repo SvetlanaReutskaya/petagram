@@ -56,7 +56,7 @@
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="v32-du-nj3" kind="push" id="Nqo-Pm-AQj"/>
+                                            <action selector="signInBtn_Touch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m0T-tI-rNA"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -73,6 +73,13 @@
                                 <rect key="frame" x="107" y="186" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daL-um-gKl">
+                                <rect key="frame" x="20" y="595" width="374" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="lightTextColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -92,12 +99,14 @@
                     <navigationItem key="navigationItem" id="sOM-Os-ZbH"/>
                     <connections>
                         <outlet property="emailTextField" destination="CZH-cY-QyR" id="v2m-hJ-SaU"/>
+                        <outlet property="errorTextField" destination="daL-um-gKl" id="3fq-zL-oMB"/>
                         <outlet property="passwordTextField" destination="drl-05-Fzb" id="d1i-gk-L7p"/>
+                        <segue destination="v32-du-nj3" kind="push" identifier="SignIntoBoard" id="ggq-wu-gmC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-781" y="591"/>
+            <point key="canvasLocation" x="-781.15942028985512" y="590.625"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9YD-hJ-EDo">
@@ -181,6 +190,13 @@
                                 <rect key="frame" x="107" y="192" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95I-uM-1vf">
+                                <rect key="frame" x="20" y="670" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="lightTextColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -197,13 +213,16 @@
                     <navigationItem key="navigationItem" id="5Md-Gq-6Ah"/>
                     <connections>
                         <outlet property="emailField" destination="xuz-ij-rJj" id="aj5-2x-CkA"/>
+                        <outlet property="errorField" destination="95I-uM-1vf" id="Sbp-Hb-2cD"/>
                         <outlet property="logInField" destination="7Rw-i2-eWO" id="hd4-tl-Xh9"/>
                         <outlet property="passwordField" destination="Mhm-93-3oc" id="j6v-QP-w3m"/>
+                        <outlet property="signUpBtn" destination="qVP-3z-CnW" id="vq9-jn-Vis"/>
+                        <segue destination="v32-du-nj3" kind="push" identifier="SignUptoBoard" id="AkG-P5-6CI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Vj-Gc-4s2" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="158" y="591"/>
+            <point key="canvasLocation" x="156.52173913043478" y="590.625"/>
         </scene>
         <!--Board-->
         <scene sceneID="YbC-H3-Lsf">
@@ -216,6 +235,9 @@
             <point key="canvasLocation" x="-328" y="1410"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="AkG-P5-6CI"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="pets" width="360" height="360"/>
     </resources>
