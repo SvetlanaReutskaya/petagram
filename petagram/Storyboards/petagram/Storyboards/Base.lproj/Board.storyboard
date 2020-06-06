@@ -30,14 +30,49 @@
                     <view key="view" contentMode="scaleToFill" id="Ori-UG-6lA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dla-M1-feK">
+                                <rect key="frame" x="10" y="74" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="OoI-bl-iYm"/>
+                                    <constraint firstAttribute="width" constant="40" id="jW9-E5-itu"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="exitIcon"/>
+                                <connections>
+                                    <action selector="logOut_Touch:" destination="2xM-p5-RH2" eventType="touchUpInside" id="rAt-jK-NW6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ty1-Ll-S5l">
+                                <rect key="frame" x="364" y="74" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="BsP-fs-aMx"/>
+                                    <constraint firstAttribute="width" constant="40" id="I36-uU-X7c"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="addIcon"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fC-Ts-abG">
+                                <rect key="frame" x="177" y="74" width="60" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.70066732168197632" green="0.93289875984191895" blue="0.89274781942367554" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2fC-Ts-abG" firstAttribute="top" secondItem="JGc-ay-xIc" secondAttribute="top" constant="30" id="3za-Nk-FnD"/>
+                            <constraint firstItem="ty1-Ll-S5l" firstAttribute="top" secondItem="JGc-ay-xIc" secondAttribute="top" constant="30" id="NmL-js-GcV"/>
+                            <constraint firstItem="Dla-M1-feK" firstAttribute="top" secondItem="JGc-ay-xIc" secondAttribute="top" constant="30" id="d1G-xQ-xLz"/>
+                            <constraint firstItem="JGc-ay-xIc" firstAttribute="trailing" secondItem="ty1-Ll-S5l" secondAttribute="trailing" constant="10" id="dlk-nh-ko5"/>
+                            <constraint firstItem="2fC-Ts-abG" firstAttribute="centerX" secondItem="Ori-UG-6lA" secondAttribute="centerX" id="pAw-js-2rY"/>
+                            <constraint firstItem="Dla-M1-feK" firstAttribute="leading" secondItem="JGc-ay-xIc" secondAttribute="leading" constant="10" id="vAN-mz-1fT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="JGc-ay-xIc"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="petIcon" id="iUo-NU-K2l"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="djt-KW-0eL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1606" y="1615"/>
+            <point key="canvasLocation" x="1605.7971014492755" y="1614.5089285714284"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="NoT-Aw-iNs">
@@ -93,7 +128,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="addIcon" width="208" height="208"/>
         <image name="camerIcon" width="33" height="33"/>
+        <image name="exitIcon" width="512" height="512"/>
         <image name="galleryIcon" width="33" height="33"/>
         <image name="petIcon" width="33" height="33"/>
         <image name="searchIcon" width="33" height="33"/>

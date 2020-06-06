@@ -20,7 +20,9 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if (Auth.auth().currentUser != nil) {
+            self.performSegue(withIdentifier: "SignIntoBoard", sender: nil)
+        }
     }
     override func viewWillAppear(_ animated: Bool) {
         hideNavigationBar(animated: animated)
