@@ -14,14 +14,87 @@
                     <view key="view" contentMode="scaleToFill" id="Ng4-Xp-vqe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tUN-Lr-rD5">
+                                <rect key="frame" x="20" y="74" width="374" height="659"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImg" translatesAutoresizingMaskIntoConstraints="NO" id="Ce1-jU-Wre">
+                                        <rect key="frame" x="62" y="204.5" width="250" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="YZa-XT-BVt"/>
+                                            <constraint firstAttribute="width" constant="250" id="rYH-zE-Zaw"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="HashTags" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Jkl-rE-j8a">
+                                        <rect key="frame" x="8" y="115" width="358" height="68"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kMf-QQ-vwO">
+                                        <rect key="frame" x="8" y="495" width="358" height="144"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Title..." borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S6H-iI-cO3">
+                                        <rect key="frame" x="8" y="23" width="358" height="60"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="40m-50-fnc"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.85392028093338013" green="0.95744210481643677" blue="0.94969147443771362" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Jkl-rE-j8a" firstAttribute="top" secondItem="S6H-iI-cO3" secondAttribute="bottom" constant="32" id="Afg-YI-fmp"/>
+                                    <constraint firstItem="S6H-iI-cO3" firstAttribute="centerX" secondItem="Ce1-jU-Wre" secondAttribute="centerX" id="C8y-KH-Rd8"/>
+                                    <constraint firstItem="kMf-QQ-vwO" firstAttribute="top" secondItem="Ce1-jU-Wre" secondAttribute="bottom" constant="40.5" id="Gyg-8E-w2t"/>
+                                    <constraint firstAttribute="bottom" secondItem="kMf-QQ-vwO" secondAttribute="bottom" constant="20" id="RC2-Am-lFe"/>
+                                    <constraint firstItem="Ce1-jU-Wre" firstAttribute="top" secondItem="Jkl-rE-j8a" secondAttribute="bottom" constant="21.5" id="XhJ-4g-cOe"/>
+                                    <constraint firstItem="Ce1-jU-Wre" firstAttribute="centerX" secondItem="tUN-Lr-rD5" secondAttribute="centerX" id="XjX-DX-bwj"/>
+                                    <constraint firstItem="kMf-QQ-vwO" firstAttribute="centerX" secondItem="Ce1-jU-Wre" secondAttribute="centerX" id="Zco-Vi-a8r"/>
+                                    <constraint firstItem="Ce1-jU-Wre" firstAttribute="centerY" secondItem="tUN-Lr-rD5" secondAttribute="centerY" id="bqt-Jv-Kzq"/>
+                                    <constraint firstItem="Jkl-rE-j8a" firstAttribute="centerX" secondItem="Ce1-jU-Wre" secondAttribute="centerX" id="e9v-UQ-KCJ"/>
+                                    <constraint firstItem="S6H-iI-cO3" firstAttribute="trailing" secondItem="kMf-QQ-vwO" secondAttribute="trailing" id="k0B-24-k6N"/>
+                                    <constraint firstItem="S6H-iI-cO3" firstAttribute="top" secondItem="tUN-Lr-rD5" secondAttribute="top" constant="23" id="kl0-sk-uib"/>
+                                    <constraint firstItem="S6H-iI-cO3" firstAttribute="leading" secondItem="Jkl-rE-j8a" secondAttribute="leading" id="qiP-4V-Ceg"/>
+                                    <constraint firstItem="S6H-iI-cO3" firstAttribute="trailing" secondItem="Jkl-rE-j8a" secondAttribute="trailing" id="sNh-5I-xeS"/>
+                                    <constraint firstItem="S6H-iI-cO3" firstAttribute="leading" secondItem="tUN-Lr-rD5" secondAttribute="leadingMargin" id="tBO-FP-sud"/>
+                                    <constraint firstItem="S6H-iI-cO3" firstAttribute="leading" secondItem="kMf-QQ-vwO" secondAttribute="leading" id="ume-1O-r21"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8z-MX-6ty">
+                                <rect key="frame" x="20" y="755" width="374" height="45"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <state key="normal" title="S H A R E">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.70066732168197632" green="0.93289875984191895" blue="0.89274781942367554" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vmq-aW-DCM" firstAttribute="trailing" secondItem="tUN-Lr-rD5" secondAttribute="trailing" constant="20" id="6s5-WD-cuL"/>
+                            <constraint firstItem="e8z-MX-6ty" firstAttribute="leading" secondItem="tUN-Lr-rD5" secondAttribute="leading" id="Am4-H3-EFG"/>
+                            <constraint firstItem="vmq-aW-DCM" firstAttribute="bottom" secondItem="e8z-MX-6ty" secondAttribute="bottom" constant="13" id="LoE-RO-Y73"/>
+                            <constraint firstItem="tUN-Lr-rD5" firstAttribute="leading" secondItem="vmq-aW-DCM" secondAttribute="leading" constant="20" id="My2-PZ-apk"/>
+                            <constraint firstItem="e8z-MX-6ty" firstAttribute="top" secondItem="tUN-Lr-rD5" secondAttribute="bottom" constant="22" id="n0k-AV-ZhZ"/>
+                            <constraint firstItem="e8z-MX-6ty" firstAttribute="trailing" secondItem="tUN-Lr-rD5" secondAttribute="trailing" id="s9z-5J-bvq"/>
+                            <constraint firstItem="vmq-aW-DCM" firstAttribute="bottom" secondItem="tUN-Lr-rD5" secondAttribute="bottom" constant="80" id="sIg-tI-kDc"/>
+                            <constraint firstItem="tUN-Lr-rD5" firstAttribute="top" secondItem="vmq-aW-DCM" secondAttribute="top" constant="30" id="yBv-jA-BbV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vmq-aW-DCM"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="camerIcon" id="p2s-c5-gmi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U8e-5N-UF0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1104" y="2439"/>
+            <point key="canvasLocation" x="-1104.3478260869565" y="2438.8392857142858"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="7pY-uO-fae">
@@ -130,6 +203,7 @@
     <resources>
         <image name="addIcon" width="208" height="208"/>
         <image name="camerIcon" width="33" height="33"/>
+        <image name="defaultImg" width="250" height="250"/>
         <image name="exitIcon" width="512" height="512"/>
         <image name="galleryIcon" width="33" height="33"/>
         <image name="petIcon" width="33" height="33"/>
